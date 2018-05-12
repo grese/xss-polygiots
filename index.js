@@ -39,7 +39,7 @@ module.exports = function(options) {
       'js4%22,x:' + fn + '%28%22' + getPayloadMessage(14) + '%22%29,y:%22',
 
       '>"\'><img%20src%3D%26%23x6a;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3a;' +
-      encodeURIComponent(entities.encode(fn + "('" + getPayloadMessage(15)  + "')" + , {encodeEverything: true})),
+      encodeURIComponent(entities.encode(fn + "('" + getPayloadMessage(15)  + "')", {encodeEverything: true})),
 
       "<IMG SRC='x' onerror='javascript:console.error(&quot;" + getPayloadMessage(16) + "&quot;);'>",
 
